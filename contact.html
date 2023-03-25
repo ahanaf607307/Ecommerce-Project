@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making anis express">
+    <title>Ecommerce Project </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar start here -->
+    <nav>
+        <ul class="nav_upper flex_space_around">
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Home</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="register.html" class="nav_link">Register</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="login.html" class="nav_link">Login</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Logout</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="contact.html" class="nav_link">Contact</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="profile.html" class="nav_link">
+                    <img class="profile_icon" src="images/profile.jpg" alt="profile image">
+                </a>
+            </li>
+        </ul>
+
+
+    </nav>
+    <!-- navbar end here -->
+
+    <!-- Contact start -->
+    <main>
+        <section class="contact__section">
+            <h3 class="flex_center">Contact Us</h3>
+            <div class="contact__div flex_center ">
+                <div class="contact__left">
+                    <div class="card">
+                        <form action="" class="form">
+                            <div class="form_control flex_center">
+                                <label for="name">Name </label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+                            <div class="form_control flex_center">
+                                <label for="email">Email </label>
+                                <input type="email" name="email" required id="email">
+                            </div>
+
+
+                            <div class="form_control flex_center">
+                                <label for="about me">Message</label>
+                                <textarea name="about me" id="" cols="30" rows="10"></textarea>
+                            </div>
+
+                            <div class="form_control flex_center">
+                                <button class="btn contact_btn" type="submit">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    
+                </div>
+
+                <div class="contact__right flex_space_around">
+                    <div class="contact_desc fle">
+                        <h4>Address</h4>
+                        <p>Salbon Mistripara</p>
+                        <p>Rangpur, Bangladesh</p>
+                        <br>
+                        <p>Call : +88000000000</p>
+
+                        <div class="contact_map">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114995.93768910096!2d89.19200552301868!3d25.749976318401266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e32de6fca6019b%3A0x9fa496e687f818c8!2sRangpur!5e0!3m2!1sen!2sbd!4v1679753104312!5m2!1sen!2sbd"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="footer flex_space_around">
+        <div class="flex_space_around">
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="email" name="subscribe" id="subscribe" class="footer_input" placeholder="Your Email Address">
+
+            <button class="btn btn_subscribe">
+                Subscribe
+            </button>
+
+        </div>
+
+        <div>
+            <p>&copy; Copyright 2023 Ahanaf Express.All rights reserved </p>
+        </div>
+    </footer>
+    <!-- footer end  -->
+</body>
+
+</html>

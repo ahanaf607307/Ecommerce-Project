@@ -1,0 +1,189 @@
+/* reset code starts from here */
+:root {
+    --primary-color: rgb(0, 172, 0);
+    --secondary-color: rgb(9, 107, 9);
+    --padding: 0.5rem;
+    --transition: all 0.3s;
+    --border-radius: 0.7rem;
+    --box-shadow: 0.1rem 0.2rem 0.8rem rgb(226, 226, 226);
+}
+
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.flex_space_around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    padding: var(--padding);
+}
+
+.card:hover {
+    box-shadow: 0.1rem 0.2rem 0.8rem rgb(177, 177, 177);
+}
+
+.dot {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+/* reset code ends from here */
+
+/* register section start */
+.section_title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    min-height: 60vh;
+}
+
+.register .card {
+    width: 20rem;
+    padding: 4rem;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.form_control label {
+    flex: 0.1;
+    text-align: left;
+}
+
+.form_control input,
+textarea {
+    flex: 0.9;
+    text-align: right;
+    padding: 0.7rem;
+    border: 1px solid;
+}
+
+.form_control textarea {
+    resize: none;
+    height: 12vh;
+}
+
+.contact_btn{
+    width: 15rem;
+   color: rgb(255, 248, 248);
+   background-color: #3700ff;
+}
+
+.contact_btn:hover{
+    color: white;
+}
+
+/* register section end */
+
+
+/* contact start */
+
+.contact__section{
+    padding: 5rem;
+}
+
+.contact__left{
+   
+    flex: 1;
+    margin-right: 5rem;
+    padding: 2rem;
+}
+
+.form{
+    padding: 2rem;
+}
+
+.contact__right{
+    flex: 1;
+}
+
+.contact__section h3{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact_desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.contact_map{
+    margin-top: 2rem;
+    border: 2px solid;
+    height: 20rem;
+}
+
+.map{
+    height: 19.8rem;
+    width: 30rem;
+}

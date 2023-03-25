@@ -1,0 +1,191 @@
+/* reset code starts from here */
+:root{
+    --primary-color:rgb(0, 172, 0);
+    --secondary-color:rgb(9, 107, 9);
+    --padding:0.5rem;
+    --transition:all 0.3s;
+    --border-radius:0.7rem;
+    --box-shadow:0.1rem 0.2rem 0.8rem rgb(226, 226, 226);
+}
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.flex_space_around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    width: 100%;
+    height: auto ;
+}
+
+.btn{
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background-color: var(--secondary-color);
+}
+
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    padding: var(--padding);
+}
+
+.card:hover{
+    box-shadow: 0.1rem 0.2rem 0.8rem rgb(177, 177, 177);
+}
+
+.dot{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.black{
+    background-color: black;
+}
+/* reset code ends from here */
+
+
+
+
+
+/* cart css start */
+
+.cart{
+    padding: var(--padding);
+    gap: 1rem;
+}
+
+.cart .card{
+    margin-bottom: 1rem;
+}
+
+.cart_item{
+    flex: 1;
+}
+
+.cart_item_action{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.cheakbox_item{
+flex: 0.1;
+}
+
+.cart__item__img{
+flex: 0.2;
+height: 10rem;
+width: 15rem;
+}
+
+.cart__item__desc{
+flex: 0.4;
+margin-left: 0.5rem;
+}
+
+.cart__item_shipping{
+    margin-top: 0.5rem;
+    color: rgb(243, 0, 0);
+}
+
+.cart__item__actions{
+    flex: 0.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.common_btn{
+    margin-top: 0.5rem;
+
+}
+
+
+
+
+.cart_payment{
+    flex: 1;
+}
+
+/* cart css end */
+
+/* payment section start */
+.cart_payment_summary > div{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 1rem 0;
+}
+
+.cart_payment_btn{
+    width: 100%;
+    
+}
+
+
+
+.cart_payment_methods i{
+    font-size: 2.5rem;
+    margin: 1 rem;
+}
+
+.cart_payment_methods > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cart_payment_methods h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* payment section end */
+
+
+@media (max-width:992px){
+    .cart_item , .cart_payment{
+        width: 90%;
+    }
+}

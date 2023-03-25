@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making anis express">
+    <title>Ecommerce Project </title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <!-- navbar start here -->
+    <nav>
+        <ul class="nav_upper flex_space_around">
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Home</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="register.html" class="nav_link">Register</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="login.html" class="nav_link">Login</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Logout</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="contact.html" class="nav_link">Contact</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="profile.html" class="nav_link">
+                    <img class="profile_icon" src="images/profile.jpg" alt="profile image">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="nav_lower flex_space_around">
+            <li class="nav_list">
+                <a href="index.html" class="nav_link nav_brand">Ahanaf Express</a>
+            </li>
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">
+                    <span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    Cart 2 Products - $124.40
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    <!-- navbar end here -->
+
+    <!-- cart start -->
+    <main>
+
+        <div class="cart flex_center">
+            <div class="cart_item">
+                <div class="cart_item_heading card">
+                    <h2>Shopping Cart [2 items]</h2>
+                    <div class="cart_item_action">
+                        <label for="select">
+                            <input type="checkbox" name="select" id="select">
+                            Select All Items
+                        </label>
+
+                        <button class="btn cart_item_btn">
+                            <i class="fa-solid fa-trash "></i>
+                        </button>
+
+                        <button class="btn">
+                            Shop More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cart_item card flex_space_around">
+                    <input type="checkbox" name="" class="cheakbox_item" id="cheakbox">
+                    <img src="images/product1.jfif" alt="product1" class="cart__item__img">
+
+                    <div class="cart__item__desc">
+                        <h3 class="product__name">
+                            Sony V-4 Headphone
+                        </h3>
+                        <h4 class="product__price">
+                            Price : $225.99
+                        </h4>
+                        <p class="cart__item_shipping">
+                            Free Shipping
+                        </p>
+                    </div>
+
+                    <div class="cart__item__actions">
+                        <button class="btn">
+                            <i class="fa-solid fa-trash "></i>
+                        </button>
+
+                        <div>
+                            <button class="btn common_btn">
+                                <i class="fa-solid fa-plus "></i>
+                            </button>
+                            <span>3</span>
+                            <button class="btn">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="cart_item card flex_space_around">
+                    <input type="checkbox" name="" class="cheakbox_item" id="cheakbox">
+                    <img src="images/product3.jfif" alt="product1" class="cart__item__img">
+
+                    <div class="cart__item__desc">
+                        <h3 class="product__name">
+                            Sony V-4 Headphone
+                        </h3>
+                        <h4 class="product__price">
+                            Price : $225.99
+                        </h4>
+                        <p class="cart__item_shipping">
+                            Free Shipping
+                        </p>
+                    </div>
+
+                    <div class="cart__item__actions">
+                        <button class="btn">
+                            <i class="fa-solid fa-trash "></i>
+                        </button>
+
+                        <div>
+                            <button class="btn common_btn">
+                                <i class="fa-solid fa-plus "></i>
+                            </button>
+                            <span>3</span>
+                            <button class="btn">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="cart_payment ">
+
+                <div class="cart_payment_summary card">
+                    <h2>
+                        Payment Summary
+                    </h2>
+                    <div class="">
+                        <p>Subtotal:</p>
+                        <p>$342.66</p>
+                    </div>
+                    <div class="">
+                        <p>Shipping Cost :</p>
+                        <p>$1.50</p>
+                    </div>
+
+                    <div class="">
+                        <p>Total Cost :</p>
+                        <p>$343.12</p>
+                    </div>
+
+                    <button class="btn cart_payment_btn">Pay Now</button>
+                </div>
+
+                <div class="cart_payment_methods card">
+                    <h2>Payment Methods</h2>
+                    <div>
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-apple-pay"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <i class="fa-brands fa-amazon-pay"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </div>
+                </div>
+
+            </div>
+    </main>
+    <!-- cart end -->
+
+    <!-- footer start -->
+    <footer class="footer flex_space_around">
+        <div class="flex_space_around">
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="email" name="subscribe" id="subscribe" class="footer_input" placeholder="Your Email Address">
+
+            <button class="btn btn_subscribe">
+                Subscribe
+            </button>
+
+        </div>
+
+        <div>
+            <p>&copy; Copyright 2023 Ahanaf Express.All rights reserved </p>
+        </div>
+    </footer>
+    <!-- footer end  -->
+</body>
+
+</html>

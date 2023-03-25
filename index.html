@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making anis express">
+    <title>Ecommerce Project </title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar start here -->
+    <nav>
+        <ul class="nav_upper flex_space_around">
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Home</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="register.html" class="nav_link">Register</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="login.html" class="nav_link">Login</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Logout</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="contact.html" class="nav_link">Contact</a>
+            </li>
+
+            <li class="nav_list">
+                <a href="profile.html" class="nav_link">
+                    <img class="profile_icon" src="images/profile.jpg" alt="profile image">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="nav_lower flex_space_around">
+            <li class="nav_list">
+                <a href="index.html" class="nav_link nav_brand">Ahanaf Express</a>
+            </li>
+            <li class="nav_list">
+                <a href="cart.html" class="nav_link">
+                    <span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    Cart 2 Products - $124.40
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    <!-- navbar end here -->
+
+    <!-- header start  -->
+    <header class="header">
+        <div class="banner flex_space_around">
+            <marquee class="banner_title" behavior="" direction="">50% Seles going on </marquee>
+            <div class="features flex_space_around">
+                <article class="feature flex_center">
+                    <i class="fa-solid fa-truck feature_icon"></i>
+                    <h3>Shipping Within 7 days</h3>
+                </article>
+                <article class="feature flex_center">
+                    <i class="fa-brands fa-rocketchat"></i>
+                    <h3> Within Support 24/7</h3>
+                </article>
+                <article class="feature flex_center">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h3>Save Payment</h3>
+                </article>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="flex_center">
+        <div class="side_bar">
+
+            <section class="categories_section">
+                <h3 class="section_title">Categories</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="Phone">
+                            <input type="checkbox" name="phone" id="phone" value="phone">
+                            Phone
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                        <label for="tablets">
+                            <input type="checkbox" name="tablets" id="tablets" value="tablets">
+                            Tablets
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                        <label for="televisions">
+                            <input type="checkbox" name="televisions" id="televisions" value="televisions">
+                            Televisions
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                        <label for="computer">
+                            <input type="checkbox" name="computer" id="computer" value="computer">
+                            Computer
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                        <label for="headphones">
+                            <input type="checkbox" name="headphones" id="headphones" value="headphones">
+                            Headphones
+                        </label>
+
+                    </li>
+                </ul>
+
+
+            </section>
+
+            <section class="price_section">
+                <h3 class="section_title">Price Range</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="price1">
+                            <input type="radio" name="price1" id="price1" value="[0,20]">
+                            $0 - $20
+                        </label>
+
+                    </li>
+                    <li class="list_item">
+                        <label for="price2">
+                            <input type="radio" name="price2" id="price2" value="[21,50]">
+                            $21 - $50
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                        <label for="price3">
+                            <input type="radio" name="price3" id="price3" value="[51,100]">
+                            $51 - $100
+                        </label>
+
+                    </li>
+
+
+
+                    <li class="list_item">
+                        <label for="price4">
+                            <input type="radio" name="price4" id="price4" value="[151,250]">
+                            $101 - $250
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                        <label for="price5">
+                            <input type="radio" name="price5" id="price5" value="[501+]">
+                            501+
+                        </label>
+
+                    </li>
+
+
+
+                </ul>
+
+
+            </section>
+
+
+            <section class="price_section">
+                <h3 class="section_title">Shipping Option</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <label for="free">
+                            <input type="radio" name="shipping" id="free" value="free">
+                            Free
+                        </label>
+
+                    </li>
+
+                    <li class="list_item">
+                        <label for="paid">
+                            <input type="radio" name="shipping" id="paid" value="paid">
+                            Paid
+                        </label>
+
+                    </li>
+
+
+
+                </ul>
+
+
+            </section>
+
+
+        </div>
+        <div class="main_content">
+            <section class="actions flex_space_around">
+                <div class="actions_sort">
+                    <label for="sort">Sort By :</label>
+                    <select name="select" id="select">
+                        <option value="sold">Most Sold First</option>
+                        <option value="rating">Most Rated First</option>
+                        <option value="price">Cheapest First</option>
+                        <option value="arrival">Newest First</option>
+
+                        <option value="discount">Biggest Descount First</option>
+                    </select>
+                </div>
+
+
+                <div class="action_search">
+                    <input type="text" name="" id="text" placeholder="Search Product">
+                    <button class="btn">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- product start -->
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in Stock</span>
+                        <hr class="hr_design">
+                        <span>3 sold</span>
+                    </div>
+                    <img src="images/product1.jfif" alt="product1" class="card_img">
+
+                    <div class="product_body">
+                        <h3 class="product_name">
+                            Sony b4 Headphone
+                        </h3>
+
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+
+                        <p class="product_desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus commodi odit
+                            dicta... <a href="product.html" class="learn_more">Learn More</a>
+                        </p>
+
+                        <h4 class="product_price">
+                            $225.99
+                        </h4>
+                        <p class="product_rating">
+                            4.5/5
+                        </p>
+
+                        <button class="btn product_button">
+                            Add to cart
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in Stock</span>
+                        <hr class="hr_design">
+                        <span>3 sold</span>
+                    </div>
+                    <img src="images/product1.jfif" alt="product1" class="card_img">
+
+                    <div class="product_body">
+                        <h3 class="product_name">
+                            Sony b4 Headphone
+                        </h3>
+
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+
+                        <p class="product_desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus commodi odit
+                            dicta... <a href="product.html" class="learn_more">Learn More</a>
+                        </p>
+
+                        <h4 class="product_price">
+                            $225.99
+                        </h4>
+                        <p class="product_rating">
+                            4.5/5
+                        </p>
+
+                        <button class="btn product_button">
+                            Add to cart
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in Stock</span>
+                        <hr class="hr_design">
+                        <span>3 sold</span>
+                    </div>
+                    <img src="images/product1.jfif" alt="product1" class="card_img">
+
+                    <div class="product_body">
+                        <h3 class="product_name">
+                            Sony b4 Headphone
+                        </h3>
+
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+
+                        <p class="product_desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus commodi odit
+                            dicta... <a href="product.html" class="learn_more">Learn More</a>
+                        </p>
+
+                        <h4 class="product_price">
+                            $225.99
+                        </h4>
+                        <p class="product_rating">
+                            4.5/5
+                        </p>
+
+                        <button class="btn product_button">
+                            Add to cart
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in Stock</span>
+                        <hr class="hr_design">
+                        <span>3 sold</span>
+                    </div>
+                    <img src="images/product1.jfif" alt="product1" class="card_img">
+
+                    <div class="product_body">
+                        <h3 class="product_name">
+                            Sony b4 Headphone
+                        </h3>
+
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+
+                        <p class="product_desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus commodi odit
+                            dicta... <a href="product.html" class="learn_more">Learn More</a>
+                        </p>
+
+                        <h4 class="product_price">
+                            $225.99
+                        </h4>
+                        <p class="product_rating">
+                            4.5/5
+                        </p>
+
+                        <button class="btn product_button">
+                            Add to cart
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in Stock</span>
+                        <hr class="hr_design">
+                        <span>3 sold</span>
+                    </div>
+                    <img src="images/product1.jfif" alt="product1" class="card_img">
+
+                    <div class="product_body">
+                        <h3 class="product_name">
+                            Sony b4 Headphone
+                        </h3>
+
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+
+                        <p class="product_desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus commodi odit
+                            dicta... <a href="product.html" class="learn_more">Learn More</a>
+                        </p>
+
+                        <h4 class="product_price">
+                            $225.99
+                        </h4>
+                        <p class="product_rating">
+                            4.5/5
+                        </p>
+
+                        <button class="btn product_button">
+                            Add to cart
+                        </button>
+                    </div>
+                </article>
+
+
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in Stock</span>
+                        <hr class="hr_design">
+                        <span>3 sold</span>
+                    </div>
+                    <img src="images/product1.jfif" alt="product1" class="card_img">
+
+                    <div class="product_body">
+                        <h3 class="product_name">
+                            Sony b4 Headphone
+                        </h3>
+
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+
+                        <p class="product_desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus commodi odit
+                            dicta... <a href="product.html" class="learn_more">Learn More</a>
+                        </p>
+
+                        <h4 class="product_price">
+                            $225.99
+                        </h4>
+                        <p class="product_rating">
+                            4.5/5
+                        </p>
+
+                        <button class="btn product_button">
+                            Add to cart
+                        </button>
+                    </div>
+                </article>
+
+
+            </section>
+
+
+
+
+
+            <!-- product end -->
+            <!-- pagination st -->
+            <div class="pagination">
+                <button class="btn pagination_btn"><i class="fa-solid fa-less-than"></i></button>
+                <button class="btn pagination_btn">2</button>
+                <button class="btn pagination_btn">3</button>
+                <button class="btn pagination_btn">4</button>
+                <button class="btn pagination_btn">5</button>
+                <button class="btn pagination_btn">6</button>
+                <button class="btn pagination_btn">7</button>
+                <button class="btn pagination_btn">8</button>
+                <button class="btn pagination_btn">9</button>
+                <button class="btn pagination_btn">10</button>
+                <button class="btn pagination_btn">...</button>
+                <button class="btn pagination_btn">50</button>
+                <button class="btn pagination_btn"><i class="fa-solid fa-greater-than"></i></button>
+            </div>
+            <!-- pagination end -->
+        </div>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="footer flex_space_around">
+        <div class="flex_space_around">
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="email" name="subscribe" id="subscribe" class="footer_input" placeholder="Your Email Address">
+
+            <button class="btn btn_subscribe">
+                Subscribe
+            </button>
+
+        </div>
+
+        <div>
+            <p>&copy; Copyright 2023 Ahanaf Express.All rights reserved </p>
+        </div>
+    </footer>
+    <!-- footer end  -->
+</body>
+
+</html>
